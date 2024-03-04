@@ -1,1 +1,8 @@
-
+/* Utilizando um array estático de dez posições, desenvolva um algoritmo com as seguintes funcionalidades:
+  Cadastrar;
+  Listar todos os nomes;
+  Alterar;
+  Remover;
+  Finalizar.
+Essa estrutura ficará em um laço de repetição.
+ *\
