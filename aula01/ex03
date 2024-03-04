@@ -1,1 +1,9 @@
-
+/* 
+Utilizando um array dinâmico, desenvolva um algoritmo para gerenciar produtos, contendo as seguintes funcionalidades:
+  Cadastro: Informar nome do produto e valor.
+  Listagem: Listar todos os produtos (nome e valor).
+  Pesquisa: Será pedido um termo, localize os produtos que contenham aquele termo no seu nome.
+  Alterar: Será pedido o nome do produto que será alterado. Informe um novo nome e o valor.
+  Remover: Através do nome do produto, realize a exclusão.
+  Finalizar: Encerra o sistema.
+*\
