@@ -1,7 +1,0 @@
-/*
-Utilizando LinkedList, implemente uma estrutura de nós. Haverá um laço de repetição com as funcionalidades:
-
-Cadastrar (cadastre um nome);
-Listar (liste todos os nomes informados);
-Finalizar (encerra o laço).
-*\
