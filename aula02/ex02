@@ -1,1 +1,11 @@
+/*
+Utilizando um Vector, crie um algoritmo com as seguintes funcionalidades:
 
+Cadastrar (Não poderá haver registros iguais).
+Selecionar todos os registros.
+Realizar uma pesquisa através de um termo (Se o nome possui A, por exemplo).
+Alterar dados (Realize uma validação para garantir que será alterado).
+Remoção (Realize uma validação para garantir que será removido).
+
+	Essa estrutura ficará em uma estrutura de repetição e poderão ser registradas inúmeras informações.
+*\
