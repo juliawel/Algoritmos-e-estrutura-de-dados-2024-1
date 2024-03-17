@@ -19,7 +19,7 @@ public class ex03 {
             System.out.println("6. Sair");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine();  // Limpar o buffer do scanner
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
@@ -53,11 +53,9 @@ public class ex03 {
         String nome = scanner.nextLine();
         System.out.print("Digite o segmento do produto: ");
         String segmento = scanner.nextLine();
-        // Adicione mais características se necessário
 
         produto.put("Nome", nome);
         produto.put("Segmento", segmento);
-        // Adicione mais características se necessário
 
         listaProdutos.add(produto);
         System.out.println("Produto cadastrado com sucesso!");
@@ -88,7 +86,6 @@ public class ex03 {
 
         for (Map<String, String> produto : listaProdutos) {
             if (produto.get("Nome").equals(nomeProduto)) {
-                // Realize as alterações necessárias
                 System.out.println("Digite as novas informações do produto:");
                 cadastrarProduto(listaProdutos, scanner);
                 listaProdutos.remove(produto);
