@@ -6,7 +6,7 @@ public class ex05 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Map<String, Integer> alunos = new HashMap<>();
+        Map<String, Double> alunos = new HashMap<>();
 
         while (true) {
             System.out.println("\n==== Menu ====");
@@ -19,7 +19,7 @@ public class ex05 {
 
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine(); 
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:
@@ -46,35 +46,35 @@ public class ex05 {
         }
     }
 
-    private static void cadastrarAluno(Map<String, Integer> alunos, Scanner scanner) {
+    private static void cadastrarAluno(Map<String, Double> alunos, Scanner scanner) {
         System.out.print("Informe o nome do aluno: ");
         String nome = scanner.nextLine();
         System.out.print("Informe a nota do aluno: ");
-        int nota = scanner.nextInt();
+        double nota = scanner.nextDouble();
 
         alunos.put(nome, nota);
         System.out.println("Aluno cadastrado com sucesso!");
     }
 
-    private static void selecionarAluno(Map<String, Integer> alunos, Scanner scanner) {
+    private static void selecionarAluno(Map<String, Double> alunos, Scanner scanner) {
         System.out.print("Informe o nome do aluno: ");
         String nome = scanner.nextLine();
 
         if (alunos.containsKey(nome)) {
-            int nota = alunos.get(nome);
+            double nota = alunos.get(nome);
             System.out.println("Aluno: " + nome + ", Nota: " + nota);
         } else {
             System.out.println("Aluno não encontrado.");
         }
     }
 
-    private static void alterarNota(Map<String, Integer> alunos, Scanner scanner) {
+    private static void alterarNota(Map<String, Double> alunos, Scanner scanner) {
         System.out.print("Informe o nome do aluno: ");
         String nome = scanner.nextLine();
 
         if (alunos.containsKey(nome)) {
             System.out.print("Informe a nova nota do aluno: ");
-            int novaNota = scanner.nextInt();
+            double novaNota = scanner.nextDouble();
             alunos.put(nome, novaNota);
             System.out.println("Nota alterada com sucesso!");
         } else {
@@ -82,7 +82,7 @@ public class ex05 {
         }
     }
 
-    private static void excluirAluno(Map<String, Integer> alunos, Scanner scanner) {
+    private static void excluirAluno(Map<String, Double> alunos, Scanner scanner) {
         System.out.print("Informe o nome do aluno: ");
         String nome = scanner.nextLine();
 
@@ -94,13 +94,13 @@ public class ex05 {
         }
     }
 
-    private static void exibirEstatisticas(Map<String, Integer> alunos) {
+    private static void exibirEstatisticas(Map<String, Double> alunos) {
         int totalAlunos = alunos.size();
         int aprovados = 0;
         int reprovados = 0;
 
-        for (int nota : alunos.values()) {
-            if (nota >= 6) {
+        for (double nota : alunos.values()) {
+            if (nota >= 6.0) {
                 aprovados++;
             } else {
                 reprovados++;
